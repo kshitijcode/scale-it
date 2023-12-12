@@ -28,13 +28,15 @@ Welcome to the Scale-It project! This repository contains a Python application d
 
 
 ## Configuration
-The following configuration parameters are configurable via environment variables:
+The following configuration parameters are configurable via environment variables : 
 
 - `BASE_URL` (Default: "http://localhost:8123"): The base URL for the application.
 - `TARGET_CPU_USAGE` (Default: 0.80): The target CPU usage threshold.
 - `POLL_INTERVAL_SECONDS` (Default: 5): The polling interval in seconds.
 - `RETRY_ATTEMPTS` (Default: 3): The number of retry attempts.
 - `RETRY_DELAY` (Default: 1): The delay in seconds between retry attempts.
+
+Set the .env file. Take inspiration from the .env.template file.
 
 
 ## Starting the App
