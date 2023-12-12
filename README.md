@@ -15,6 +15,22 @@ Welcome to the Scale-It project! This repository contains a Python application d
 - Python 3.10 or higher
 - Application Provided by Vimeo to emulate load should be running 
 
+```shell
+   ── app
+   │   ├── __pycache__
+   │   ├── core
+   │   │   └── __pycache__
+   │   ├── tests
+   │   │   └── __pycache__
+   │   └── utils
+   │       └── __pycache__
+   └── venv
+      ├── bin
+      ├── include
+      └── lib
+         └── python3.10
+   ```
+
 
 ## Configuration
 The following configuration parameters are configurable via environment variables:
