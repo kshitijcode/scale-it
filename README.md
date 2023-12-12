@@ -76,7 +76,7 @@ To run the unit tests, run the following command inside the virtual environment:
 
 ## Things I would do differently in a production environment
 
-
+- Add more unit tests to cover all the code paths.
 - Run Linting and Static Code Analysis on the codebase as part of CI Process.
 - Run the unit tests and generate the coverage report as part of CI Process.
 - Run the integration tests as part of CI Process.
