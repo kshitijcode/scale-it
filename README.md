@@ -20,18 +20,10 @@ Welcome to the Scale-It project! This repository contains a Python application d
 
 ```shell
    ── app
-   │   ├── __pycache__
    │   ├── core
-   │   │   └── __pycache__
    │   ├── tests
-   │   │   └── __pycache__
    │   └── utils
-   │       └── __pycache__
    └── venv
-      ├── bin
-      ├── include
-      └── lib
-         └── python3.10
    ```
 
 
