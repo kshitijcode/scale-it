@@ -1,4 +1,0 @@
-[
-  "app/tests/test_autoscaler.py::test_scaling_down",
-  "app/tests/test_autoscaler.py::test_scaling_up"
-]
