@@ -7,6 +7,7 @@ Welcome to the Scale-It project! This repository contains a Python application d
 - [Configuration](#configuration)
 - [Starting the App](#installation)
 - [Usage](#usage)
+- [Things I would do differently in a production environment](#things-i-would-do-differently-in-a-production-environment)
 
 
 ## Pre-requisites
