@@ -4,6 +4,7 @@ Welcome to the Scale-It project! This repository contains a Python application d
 
 ## Table of Contents
 - [Prerequisites](#pre-requisites)
+- [Project Structure](#project-structure)
 - [Configuration](#configuration)
 - [Starting the App](#installation)
 - [Usage](#usage)
@@ -14,6 +15,8 @@ Welcome to the Scale-It project! This repository contains a Python application d
 
 - Python 3.10 or higher
 - Application Provided by Vimeo to emulate load should be running 
+
+## Project Structure
 
 ```shell
    ── app
