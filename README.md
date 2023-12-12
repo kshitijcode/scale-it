@@ -58,3 +58,13 @@ To run the unit tests, run the following command inside the virtual environment:
   ```
 
 
+## Things I would do differently in a production environment
+
+
+- Run Linting and Static Code Analysis on the codebase as part of CI Process.
+- Run the unit tests and generate the coverage report as part of CI Process.
+- Run the integration tests as part of CI Process.
+- I would add a CI/CD pipeline to automate the deployment process.
+- Automate and Manage the secrets using a Vault/Key Store.
+- Create a Dockerfile to containerize the application.
+ 

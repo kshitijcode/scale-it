@@ -5,17 +5,17 @@ from core.config import AppConfig
 from utils.logging import setup_logging
 import logging
 
+
 async def main():
     setup_logging()
     logger = logging.getLogger(__name__)
     config = AppConfig()
-    
     try:
         async with Application() as app:
             scaler = AutoScaler(app, config.target_cpu_usage)
             logger.info("Auto-scaler started")
-            
-            # Application Loop - Continuously poll the API Given for its current status and scale as needed.
+            # Application Loop - Continuously poll the API Given for its
+            #  current status and scale as needed.
             while True:
                 new_replica_count = await scaler.scale()
                 if new_replica_count is not None:

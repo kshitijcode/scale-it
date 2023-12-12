@@ -2,6 +2,7 @@
 
 # Create a virtual environment (if not already created)
 if [ ! -d "venv" ]; then
+    echo "Creating virtual environment..."
     python3 -m venv venv
 fi
 # Activate the virtual environment

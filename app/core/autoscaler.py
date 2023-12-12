@@ -22,15 +22,18 @@ class AutoScaler:
             current_replicas = status["replicas"]
             logger.info(f"Current CPU usage: {current_cpu_usage}, Current replicas: {current_replicas}")
 
+            # IF CPU usage is above target, scale up by 1
             if current_cpu_usage > self.target_cpu_usage:
                 new_replicas = current_replicas + 1
                 logger.info(f"CPU usage is high. Scaling up to {new_replicas} replicas.")
                 return new_replicas
+            # IF CPU usage is below target, scale down by 1
             elif current_cpu_usage < self.target_cpu_usage:
                 new_replicas = max(1, current_replicas - 1)
                 logger.info(f"CPU usage is low. Scaling down to {new_replicas} replicas.")
                 return new_replicas
             else:
+                # No action required
                 logger.info("CPU usage is optimal. No scaling action required.")
                 return current_replicas
         else:
