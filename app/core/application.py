@@ -4,6 +4,7 @@ from core.config import AppConfig
 
 config = AppConfig()
 
+
 class Application:
     """
     Manages interactions with a web service using asynchronous HTTP requests. 
@@ -35,7 +36,8 @@ class Application:
 
     async def __aexit__(self, exc_type, exc, tb):
         """
-        Asynchronous context manager exit method. Closes the aiohttp.ClientSession 
+        Asynchronous context manager exit method. Closes 
+        the aiohttp.ClientSession 
         and handles any exceptions that occur, ensuring resource cleanup.
 
         Args:
@@ -48,12 +50,14 @@ class Application:
     @retry(config)
     async def get_current_status(self):
         """
-        Retrieves the current status of the application from a specified endpoint.
+        Retrieves the current status of the application from a specified
+         endpoint.
 
         Decorated with @retry to handle potential request retries.
 
         Returns:
-            dict: The response from the server, typically including the status of the application.
+            dict: The response from the server, typically including the
+            status of the application.
         
         Raises:
             HTTPException: If the request encounters an HTTP error.
@@ -65,7 +69,8 @@ class Application:
     @retry(config)
     async def update_replicas(self, new_replica_count):
         """
-        Updates the number of replicas for the application by sending a PUT request.
+        Updates the number of replicas for the application 
+        by sending a PUT request.
 
         Decorated with @retry to manage potential request retries.
 
