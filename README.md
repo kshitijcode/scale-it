@@ -61,6 +61,8 @@ Before you can start using Scale-It, you'll need to set up your environment. Her
    ```
 The above script also runs the unit tests and generates the html test report in the core directory.
 
+This script runs on a Mac/Linux machine. For Windows, please run the commands manually.
+
 
 ## Running Unit Tests
 
